@@ -1,0 +1,163 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo-footer.png">
+    <meta name="author" content="Rodolfo">
+    <meta name="description" content="Desafio Suricata">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/BS5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/BS5/css/style.css">
+    <script src="https://kit.fontawesome.com/ced3128bfd.js" crossorigin="anonymous"></script>
+    <title>SURICATA</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand"href="#">
+                    <img src="assets/img/logo.png" alt="logo" width="150">
+                </a>
+                <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(currrent)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Productos <span class="sr-only">(currrent)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contacto <span class="sr-only">(currrent)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <h1>Nuestros Productos</h1> 
+        </header>      
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-2" style="width: 18rem;">
+                    <img src="assets/img/colaciones.jpg" alt="colaciones" height="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-tittle">Colaciones</h5>
+                        <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>    
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="card-link">Comprar</a>
+                        </div>
+                    </div>    
+                </div>  
+                <div class="col-4">     
+                    <div class="card mt-2" style="width: 18rem;">
+                    <img src="assets/img/desayunos.jpg" alt="desayunos" height="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-tittle">Desayunos</h5>
+                        <p class="card-text">Iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="card-link">Comprar</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-4">       
+                    <div class="card mt-2" style="width: 18rem;">
+                    <img src="assets/img/bebidas.jpg" alt="bebidas" height="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-tittle">Bebidas</h5>
+                        <p class="card-text">Doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="card-link">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"> 
+                    <div class="card mt-2" style="width: 18rem;">
+                    <img src="assets/img/verduras.jpg" alt="verduras" height="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-tittle">Verduras</h5>
+                        <p class="card-text">Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="card-link">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"> 
+                    <div class="card mt-2" style="width: 18rem;">
+                    <img src="assets/img/dulces.jpg" alt="dulces" height="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-tittle">Dulces</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="card-link">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"> 
+                    <div class="card mt-2" style="width: 18rem;">
+                    <img src="assets/img/empanadas.jpg" alt="empanadas" height="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-tittle">Empanadas</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the</p>   
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Ver más</a>
+                            <a href="#" class="card-link">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="icons-section d-none d-sm-block">
+            <div class="container">
+                <div class="col-md-15 d-flex justify-content-between">
+                    <h1>Ahora aceptamos</h1>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-diners-club"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
+            </div>
+            </div>
+        <footer class="d-flex justify-content-center pt-4 pb-5">
+                <img src="assets/img/logo-footer.png" alt="logo-footer">   
+        </footer>
+    <script src="assets/BS5/js/popper.min.js"></script>
+    <script src="assets/BS5/js/bootstrap.min.js"></script>
+    </body>
+</html>
