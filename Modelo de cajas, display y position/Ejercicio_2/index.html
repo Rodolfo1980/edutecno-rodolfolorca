@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio 2</title>
+<style media="screen" type="text/css">
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.square {
+    height: 200px;
+    width: 200px;
+}
+.square__red {
+    background-color: rgba(255, 0, 0, .5);
+    left: 495px;
+    position: absolute;
+    top: 175px;
+    z-index: -1;
+}
+.square__green {
+    background-color: rgba(0, 255, 0, .5);
+    left: 520px;
+    position: absolute;
+    top: 200px;
+    z-index: -2;
+}
+.square__blue {
+    background-color: rgba(0, 0, 255, .5);
+    left: 545px;
+    position: absolute;
+    top: 225px;
+    z-index: -3;
+}
+.footer {
+    height: 50px;
+    margin-top: 619px;
+    text-align: center;
+}
+h4 {
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+    <div class="cuadrados">
+    <section class="square square__red"></section>
+    <section class="square square__green"></section>
+    <section class="square square__blue"></section>
+    </div>
+    <footer class="footer" style="background-color: grey;">
+        <h4>Rodolfo Lorca - Desafío Latam 2021</h4>
+    </footer>
+</body>
+</html>
