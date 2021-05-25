@@ -1,0 +1,16 @@
+/*img {
+    max-width: 100%;
+}*/
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: $platinum;
+    }
+    &:active {
+        color: $dark-gray;
+    }
+}
+li {
+    list-style-type: none;
+}

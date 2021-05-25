@@ -10,17 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <script src="https://kit.fontawesome.com/63a26b38d6.js" crossorigin="anonymous"></script>
     <title>Blog Barbershop</title>
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
+        <nav class="navbar navbar-dark">
             <img src="assets/images/logo.png" alt="logo_image" class="bigote">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>-->
+            <div class="topnav navbar-collapse" id="navbarNav">
+                <ul class="navbar_nav ml-auto">
                     <li class="nav_item">
-                        <a class="nav_link" href="#">Nosotros <span class="sr-only"></span></a>
+                        <a class="nav_link" href="#">Nosotros </a>
                     </li>
                     <li class="nav_item">
                         <a class="nav_link" href="#">Trabajos </a>                
@@ -37,10 +41,11 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header>    
     <section class="container">
         <img src="assets/images/post-image.jpg" alt="imagen" class="container_image">
             <h1 class="centrado">5 formas de cuidar tu corte de cabello</h1>
+            <i class="fas fa-angle-double-down" style="font-size: 40px;"></i>
     </section>
     <main class="main_container">
         <div class="main_container row">
@@ -53,13 +58,13 @@
         <button class="small_button">Compartir</button>
         <button class="medium_button">Comenta en Twitter</button>
     </main>
-    <article class="author_container">
+    <article class="author_container expand-sm">
         <div class="author_container row">
             <div class="col-2">
                 <img src="assets/images/naomi-thai.png" alt="foto" class="author_picture">
             </div>
             <div class="col-2">
-                <div class="author_container-info">
+                <div class="author_container-info expand-sm">
                     <h3 class="author_name">Naomi Thai</h3>
                     <a href="#" class="author_rrss">@Naothai</a><br>
                     <a href="#" class="author_web">depelos.com</a>

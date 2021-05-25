@@ -1,0 +1,33 @@
+.small_button {
+    color: $white;
+    width: 6.5625rem;
+    height: 2.5625rem;
+    margin-left: 4.375rem;
+    display: inline-block;
+    font-family: $sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    background-color: $dark-gray;
+    border-radius: 3.125rem;
+  }
+  .small_button:hover {
+    background-color: $light-gray;
+    color: $eerie-black;
+    transition: $btn-transition;
+  }
+  .medium_button {
+      color: $white;
+      width: 10.625rem;
+      height: 2.5625rem;
+      display: inline-block;
+      font-family: $sans-serif;
+      text-align: center;
+      vertical-align: middle;
+      background-color: $dark-gray;
+      border-radius: 3.125rem;
+  }
+  .medium_button:hover {
+    background-color: $light-gray;
+    transition: $btn-transition;
+    color: $eerie-black;
+  }
