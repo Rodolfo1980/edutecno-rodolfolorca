@@ -1,0 +1,27 @@
+$primary-font-bold: 'Old Standard TT Bold', serif;
+$secondary-font-regular: 'Raleway bold', sans-serif;
+$primary-font-regular: 'Raleway Regular', sans-serif;
+h1 {
+    text-align: left;
+    font-family: $primary-font-bold;
+    font-size: $xxx-large;
+    text-transform: uppercase;
+}
+p.main__text {
+    font-family: $secondary-font-bold;
+    font-size: $large;
+    color: $granite-gray;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 100px;
+} 
+h3.suscribir {
+    position: relative;
+    left: 240px;
+    bottom: 700px;
+    padding: 0;
+    transform: rotate(90deg);
+} 
+h5 {
+    font-family: $primary-font-regular;
+}

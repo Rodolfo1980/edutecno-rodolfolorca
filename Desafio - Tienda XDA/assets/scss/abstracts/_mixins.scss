@@ -1,0 +1,111 @@
+@media all and (max-width: 800px) {
+    main.contenido {
+        position: relative;
+        top: 0px;
+        height: 1000px;
+    }
+}
+@media all and (max-width: 800px) {
+    div.principal {
+        position: relative;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: 0;
+        padding-bottom: 0;
+        height: 40%;
+        bottom: 80px;
+    }
+}
+@media all and (max-width: 800px) {
+    p.main__text {
+        position: relative;
+        display: inline-flex;
+        width: 600px;
+        text-align: center;
+    }
+}
+@media all and (max-width: 800px) {
+    div.final {
+        position: relative;
+        text-align: center;        
+        justify-content: center;
+        height: 100px;
+        width: 900px;
+        border-right: 0;
+        bottom: 100px;
+    }
+} 
+@media all and (max-width: 800px) {
+    div.newsletter {    
+        position: relative;
+        max-width: 90%;
+        height: 300px;
+        padding: 0;
+        top: 0px;
+    }    
+}
+@media all and (max-width: 800px) {
+    div.caja {
+        width: 90%;
+        left: 30px;
+    }
+}
+@media all and (max-width: 800px) {
+    button.boton {
+        left: 140px;
+        top: 20px;
+    }
+}
+@media all and (max-width: 800px) {
+    div.navbar__brand {
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        left: 5px;
+        padding-left: 10px;
+        padding-top: 20px;
+        top: 20px;
+    }
+} 
+@media all and (max-width: 800px) {
+    .hero .imagen {
+        position: relative;
+        border: none;
+        top: 40px;
+        left: 0%;
+        right: 0%;
+        height: 400px;
+        width: 700px;
+    } 
+} 
+@media all and (max-width: 800px) {
+    div.hero {
+        position: relative;
+        float: left;
+        height: 400px;
+        width: 400px;
+        left: 227px;
+    }
+}
+@media all and (max-width: 800px) {
+    h3.suscribir {
+        display: none;
+        
+    }
+}
+@media all and (max-width: 800px) {
+    h1 {
+        position: relative;
+        text-align: center;
+        display: inline-flex;
+        width: 650px;
+    }
+}
+@media all and (max-width: 800px) {
+    .navbar-toggler {
+        position: relative;
+        margin-left: 500px;
+        bottom: 30px;
+      }
+}
