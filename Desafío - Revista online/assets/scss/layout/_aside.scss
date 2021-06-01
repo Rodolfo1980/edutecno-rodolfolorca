@@ -1,0 +1,28 @@
+.listado__izquierdo {
+    width: 220px;
+    float: right;
+}
+.cabecera__listado {
+    width: 220px;
+    border-bottom: 1px solid gray;
+}
+.tags {
+    border-bottom: 1px solid gray;
+}
+.tags ul {
+    padding: 0;
+    list-style: none;
+}
+.tags ul li {
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+}
+.noticias__destacadas {
+    margin-bottom: 50px;
+}
+.noticias__destacadas img {
+    width: 220px;
+    height: 200px;
+}
