@@ -1,0 +1,27 @@
+.contenedor .nav {
+    grid-area: nav;
+    display: flex;
+    top: 0;
+    width: 100%;
+}
+.contenedor nav .menu {
+    margin-left: 1100px;
+}
+.contenedor nav .logo {
+    position: relative;
+    top: 15px;
+    left: 115px;
+    font-size: $large;
+}
+.contenedor nav .app {
+    position: relative;
+    top: 10px;
+    left: 115px;
+}
+#lista li {
+    display: inline;
+    position: relative;
+    top: 20px;
+    right: 110px;
+    margin: 1px;
+}

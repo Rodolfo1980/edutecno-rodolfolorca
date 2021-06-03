@@ -1,0 +1,83 @@
+.contenedor header .author__image {
+    grid-area: author__image;
+    position: relative;
+    max-width: 34%;
+    .author__picture {
+        position: relative;
+        width: 50%;
+        height: 120%;
+        left: 110px;
+        top: 10px;
+        border-radius:10rem;
+        border:0.0625rem solid $granite-gray;
+    }
+    h4 {
+        position: relative;
+        left: 200px;
+        bottom: 45px;
+    }
+    p {
+        position: relative;
+        left: 201px;
+        bottom: 40px; 
+        font-size: $x-small;
+        color: $granite-gray;
+    }
+}
+@media all and (max-width: 800px) {
+    .contenedor header .author__image {
+        grid-area: author__image;
+        position: relative;
+        max-width: 80%;
+        .author__picture {
+            position: relative;
+            width: 50%;
+            height: 150%;
+            left: 110px;
+            top: 10px;
+            border-radius:10rem;
+            border:0.0625rem solid $granite-gray;
+        }
+        h4 {
+            position: relative;
+            left: 220px;
+            bottom: 45px;
+        }
+        p {
+            position: relative;
+            left: 221px;
+            bottom: 40px; 
+            font-size: $x-small;
+            color: $granite-gray;
+        }
+    }
+} 
+@media all and (max-width: 400px) {
+    .contenedor header .author__image {
+        grid-area: author__image;
+        position: relative;
+        max-width: 80%;
+        .author__picture {
+            position: relative;
+            width: 100%;
+            height: 170%;
+            left: 430px;
+            top: 10px;
+            border-radius:10rem;
+            border:0.0625rem solid $granite-gray;
+        }
+        h4 {
+            position: relative;
+            left: 540px;
+            bottom: 90px;
+            font-size: $xs-large;
+        }
+        p {
+            position: relative;
+            left: 540px;
+            bottom: 85px; 
+            font-size: $medium;
+            color: $granite-gray;
+        }
+    }
+} 
