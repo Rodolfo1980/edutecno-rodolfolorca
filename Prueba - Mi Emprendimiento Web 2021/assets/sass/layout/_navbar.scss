@@ -1,0 +1,59 @@
+.nav {
+    grid-area: nav;
+    background: $black;
+    color: $white;
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        position: relative;
+        max-width: 20%;
+    }
+    .left .logo {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        line-height: 76px;
+    }
+    @media all and (max-width: 450px) {
+        .left .logo {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .nav__toggle {
+        background: none;
+        border: none;
+        font-size: $x-large;
+        color: $white;
+        padding: 0 10px;
+        line-height: 60px;
+        display: none;
+    }
+    @media all and (max-width: 450px) {
+        .nav__toggle {
+            display: block;
+        }
+        :hover {
+            color: $orange;
+        }
+    }
+    .menu {
+        display: flex;
+        margin-right: 30px;
+        list-style: none;
+        font-size: $medium;
+        font-family: $primary-font-bold;
+        a {
+            text-decoration: none;
+            margin: 0 5px;
+            color: $white;
+            line-height: 76px;
+        }    
+    }
+    @media all and (max-width: 450px) {
+        .menu {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.hero {
+    grid-area: hero;
+    background: $white;
+    margin: 5px;
+    border: $charcoal 1px solid;
+}
+@media all and (max-width: 450px) {
+    .hero {
+        position: relative;
+        top: -25px;
+        height: 730px;
+    }
+}
+.caja__contenedor-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 340px;
+    margin: 10px;
+    padding: 2px;
+    border: gray 1px solid;
+    p {
+        font-size: $x-small;
+        font-family: $primary-font-regular;
+    }
+    h4 {
+        font-size: $large;
+        font-family: $primary-font-bold;
+    }
+}
+.image1 {
+    position: relative;
+    max-width: 490px;
+    min-height: auto;
+    max-height: 200px;
+    top: -10px;
+    margin: auto auto;
+}
+.texto1 {
+    position: relative;
+    text-align: center;
+    left: 2px;
+    top: -20px;
+}
+.favicons {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.caja__contenedor-abajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    margin: 10px;
+    padding: 2px;
+    border: gray 1px solid;
+    p {
+        font-size: $x-small;
+        font-family: $primary-font-regular;
+    }
+    h4 {
+        font-size: $large;
+        font-family: $primary-font-bold;
+    }
+}
+.image2 {
+    position: relative;
+    max-width: 490px;
+    min-height: auto;
+    max-height: 210px;
+    top: -5px;
+    margin: auto auto;
+}
+.texto2 {
+    position: relative;
+    text-align: center;
+    left: 2px;
+    top: -15px;
+}

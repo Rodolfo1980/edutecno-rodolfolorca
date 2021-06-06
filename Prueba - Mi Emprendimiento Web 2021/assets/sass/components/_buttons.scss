@@ -1,0 +1,12 @@
+.input .button {
+    position: relative;
+    width: 45px;
+    border: 1px solid;
+    border-color: $charcoal;
+    background: $tangerine;
+    color: $white;
+    :hover {
+        background: $white;
+        color: $orange;
+    }
+}    

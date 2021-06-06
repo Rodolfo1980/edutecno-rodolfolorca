@@ -1,0 +1,52 @@
+.footer {
+    grid-area: footer;
+    background: $black;
+    color: $white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 45px;
+    .importante {
+        display: flex;
+        justify-content: space-evenly;
+        width: 250px;
+        p {
+            font-family: $secondary-font-regular;
+            font-size: $small;
+        }
+    }
+    .derechos {
+        font-size: $medium;
+        font-family: $primary-font-bold;
+    }
+    .input .entrada {
+        background: $white;
+        color: gray;
+        :focus {
+            background: $tangerine;
+            color: gray;
+        }
+    }
+    .input .button {
+        position: relative;
+        width: 45px;
+        border: 1px solid;
+        border-color: $charcoal;
+        background: $tangerine;
+        color: $white;
+        :hover {
+            background: $white;
+            color: $orange;
+        }
+    }
+}
+@media all and (max-width: 450px) {
+    .footer {
+        position: relative;
+        bottom: -200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

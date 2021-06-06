@@ -1,0 +1,15 @@
+.header {
+    grid-area: header;
+    background: $white;
+    text-align: center;
+    .flujo {
+        height: 240px; 
+    }
+}
+@media all and (max-width: 450px) {
+    .header {
+        .flujo {
+            height: 300px; 
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/*@-webkit-keyframes move {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 25px;
+            }
+            100% {
+                left: 50px;
+            }
+        }
+        .cajita, .cajita2 {
+            position: relative;
+            -webkit-animation: move 3s ease-in-out;
+            animation: move 3s ease-in-out;
+        }*/
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}  
+    .rodamiento {
+        -webkit-animation: spin 2.5s infinite;
+        transform-origin: bottom center;
+        animation: spin 2s infinite;
+        -webkit-animation-timing-function: linear;
+    }
+    

@@ -1,0 +1,8 @@
+.input .entrada {
+    background: $white;
+    color: gray;
+    :focus {
+        background: $tangerine;
+        color: gray;
+    }
+}
