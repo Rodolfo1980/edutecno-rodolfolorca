@@ -1,0 +1,14 @@
+var n1 = prompt("Ingrese un primer número entero: ");
+var n1 = parseInt(n1);
+var n2 = prompt("Ingrese un segundo número entero: ");
+var n2 = parseInt(n2);
+var n3 = prompt("Ingrese un tercer número entero: ");
+var n3 = parseInt(n3);
+var n4 = prompt("Ingrese un cuarto número entero: ");
+var n4 = parseInt(n4);
+var n5 = prompt("Ingrese un quinto número entero: ");
+var n5 = parseInt(n5);
+var suma = n1+n2+n3+n4+n5;
+var promedio = suma/5;
+alert("El resultado de la suma entre los 5 números es "+suma);
+alert("El promedio entre los 5 números es "+promedio);
