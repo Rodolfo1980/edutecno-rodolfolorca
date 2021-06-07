@@ -56,6 +56,58 @@ body {
     grid-template-areas: "nav" "header" "hero" "side" "footer";
   }
 }
+@-webkit-keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(50px, 0px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(50px, 0px);
+  }
+}
+.animacion--mover {
+  -webkit-animation: mover 3s ease-in-out infinite alternate;
+  animation: mover 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+.rodamiento {
+  -webkit-animation: spin 2.5s infinite;
+  transform-origin: bottom center;
+  animation: spin 2s infinite;
+  -webkit-animation-timing-function: linear;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -411,24 +463,40 @@ body {
   height: 280px;
   width: 230px;
   bottom: -20px;
-  /*@-webkit-keyframes move {
-      0% {
-          left: 0;
-      }
-      50% {
-          left: 25px;
-      }
-      100% {
-          left: 50px;
-      }
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
   }
-  .cajita, .cajita2 {
-      position: relative;
-      -webkit-animation: move 3s ease-in-out;
-      animation: move 3s ease-in-out;
-  }*/
+  100% {
+    transform: translate(100px, 0px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(100px, 0px);
+  }
+}
+.svg .animacion--mover {
+  -webkit-animation: mover 3s ease-in-out infinite alternate;
+  animation: mover 3s ease-in-out infinite alternate;
 }
 @-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+@keyframes spin {
   0% {
     transform: rotate(0deg);
     transform-origin: center;

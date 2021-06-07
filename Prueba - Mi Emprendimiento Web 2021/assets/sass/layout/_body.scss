@@ -254,22 +254,26 @@ body {
     height: 280px;
     width: 230px;
     bottom: -20px;
-        /*@-webkit-keyframes move {
+        @-webkit-keyframes mover {
             0% {
-                left: 0;
-            }
-            50% {
-                left: 25px;
+                transform: translate(0px, 0px);                
             }
             100% {
-                left: 50px;
+                transform: translate(100px, 0px);
             }
         }
-        .cajita, .cajita2 {
-            position: relative;
-            -webkit-animation: move 3s ease-in-out;
-            animation: move 3s ease-in-out;
-        }*/
+        @keyframes mover {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            100% {
+                transform: translate(100px, 0px);
+            }
+        }
+        .animacion--mover {
+            -webkit-animation: mover 3s ease-in-out infinite alternate;
+            animation: mover 3s ease-in-out infinite alternate;
+        }
         @-webkit-keyframes spin {
             0% {
                 transform: rotate(0deg);
@@ -282,6 +286,18 @@ body {
                 transform-box: fill-box;
             }
         }  
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+                transform-origin: center;
+                transform-box: fill-box;
+            }
+            100% {
+                transform: rotate(360deg);
+                transform-origin: center;
+                transform-box: fill-box;
+            }
+        }
         .rodamiento {
             -webkit-animation: spin 2.5s infinite;
             transform-origin: bottom center;
