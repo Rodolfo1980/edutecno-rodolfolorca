@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const radiologia = [{
+            hora: "11:00",
+            especialista: "IGNACIO SCHULZ",
+            paciente: "FRANCISCA ROJAS",
+            rut: "9878782-1",
+            prevision: "FONASA"
+        },
+        {
+            hora: "11:30",
+            especialista: "FEDERICO SUBERCASEAUX",
+            paciente: "PAMELA ESTRADA",
+            rut: "15345241-3",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "15:00",
+            especialista: "FERNANDO WURTHZ",
+            paciente: "ARMANDO LUNA",
+            rut: "16445345-9",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "15:30",
+            especialista: "ANA MARÍA GODOY",
+            paciente: "MANUEL GODOY",
+            rut: "17666419-0",
+            prevision: "FONASA",
+        },
+        {
+            hora: "16:00",
+            especialista: "PATRICIA SUAZO",
+            paciente: "RAMÓN ULLOA",
+            rut: "14989389-K",
+            prevision: "FONASA",
+        },
+    ];
+    var primeraHora = radiologia[0];
+    var ultimaHora = radiologia[0];
+    document.write('<p>Estadisticas centro médico ñuñoa</p>');   
+    document.write('<b>RADIOLOGÍA</b>');
+    document.write('<table>');
+    document.write('<tr><td><b>Hora</b></td><td><b>Especialista</b></td><td><b>Paciente</b></td><td><b>Rut</b></td><td><b>Previsión</b></td></tr>');
+    for (i = 0; i < radiologia.length; i++) {
+	var hora = radiologia[i];	
+	if (hora.hora < primeraHora.hora)    	
+		primeraHora = radiologia[i];
+	if (hora.hora > ultimaHora.hora)    	
+		ultimaHora = radiologia[i];		
+	document.write('<tr><td>' + hora.hora + '</td><td>' + hora.especialista + '</td><td>' + hora.paciente + '</td><td>' + hora.rut + '</td><td>' + hora.prevision + '</td></tr>');
+    }
+    document.write('<p>Primera atención: ' + primeraHora.paciente + ' - ' + primeraHora.prevision + ' | Última atención: ' + ultimaHora.paciente + ' - ' + ultimaHora.prevision + '</p>');
+    document.write('</table><br>'); 
+
+        const traumatologia = [{
+            hora: "08:00",
+            especialista: "MARÍA PAZ ALTUZARRA",
+            paciente: "PAULA SÁNCHEZ",
+            rut: "15554774-5",
+            prevision: "FONASA",
+        },
+        {
+            hora: "10:00",
+            especialista: "RAÚL ARAYA",
+            paciente: "ANGÉLICA NAVAS",
+            rut: "15444147-9",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "10:30",
+            especialista: "MARÍA ARRIAGADA",
+            paciente: "ANA KLAPP",
+            rut: "17879423-9",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "11:00",
+            especialista: "ALEJANDRO BADILLA",
+            paciente: "FELIPE MARDONES",
+            rut: "1547423-6",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "11:30",
+            especialista: "CECILIA BUDNIK",
+            paciente: "DIEGO MARRÉ",
+            rut: "16554741-K",
+            prevision: "FONASA",
+        },
+        {
+            hora: "12:00",
+            especialista: "ARTURO CAVAGNARO",
+            paciente: "CECILIA MENDEZ",
+            rut: "9747535-8",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "12:30",
+            especialista: "ANDRÉS KANACRI",
+            paciente: "MARCIAL SUAZO",
+            rut: "11254785-5",
+            prevision: "ISAPRE",
+        },
+    ];
+    var primeraHora = traumatologia[0];
+    var ultimaHora = traumatologia[0];   
+    document.write('<b>TRAUMATOLOGÍA</b>');
+    document.write('<table>');
+    document.write('<tr><td><b>Hora</b></td><td><b>Especialista</b></td><td><b>Paciente</b></td><td><b>Rut</b></td><td><b>Previsión</b></td></tr>');
+    for (i = 0; i < traumatologia.length; i++) {
+	var hora = traumatologia[i];	
+	if (hora.hora < primeraHora.hora)    	
+		primeraHora = traumatologia[i];
+	if (hora.hora > ultimaHora.hora)    	
+		ultimaHora = traumatologia[i];		
+	document.write('<tr><td>' + hora.hora + '</td><td>' + hora.especialista + '</td><td>' + hora.paciente + '</td><td>' + hora.rut + '</td><td>' + hora.prevision + '</td></tr>');
+    }
+    document.write('<p>Primera atención: ' + primeraHora.paciente + ' - ' + primeraHora.prevision + ' | Última atención: ' + ultimaHora.paciente + ' - ' + ultimaHora.prevision + '</p>');
+    document.write('</table><br>');
+    const dental = [{
+            hora: "08:30",
+            especialista: "ANDREA ZUÑIGA",
+            paciente: "MARCELA RETAMAL",
+            rut: "11123425-6",
+            prevision: "ISAPRE"
+        },
+        {
+            hora: "11:00",
+            especialista: "MARÍA PAZ ZAÑARTU",
+            paciente: "ÁNGEL MUÑÓZ",
+            rut: "9878789-2",
+            prevision: "ISAPRE",
+        },
+        {
+            hora: "11:30",
+            especialista: "SCARLETT WITTING",
+            paciente: "MARIO KAST",
+            rut: "7998789-5",
+            prevision: "FONASA",
+        },
+        {
+            hora: "13:00",
+            especialista: "FRANCISCO VON TEUBER",
+            paciente: "KARIN FERNÁNDEZ",
+            rut: "18887662-K",
+            prevision: "FONASA",
+        },
+        {
+            hora: "13:30",
+            especialista: "EDUARDO VIÑUELA",
+            paciente: "HUGO SÁNCHEZ",
+            rut: "17665461-4",
+            prevision: "FONASA",
+        },
+        {
+            hora: "14:00",
+            especialista: "RAQUEL VILLASECA",
+            paciente: "ANA SEPÚLVEDA",
+            rut: "14441281-0",
+            prevision: "ISAPRE",
+        },
+    ];
+    var primeraHora = dental[0];
+    var ultimaHora = dental[0];   
+    document.write('<b>DENTAL</b>');
+    document.write('<table>');
+    document.write('<tr><td><b>Hora</b></td><td><b>Especialista</b></td><td><b>Paciente</b></td><td><b>Rut</b></td><td><b>Previsión</b></td></tr>');
+    for (i = 0; i < dental.length; i++) {
+	var hora = dental[i];	
+	if (hora.hora < primeraHora.hora)    	
+		primeraHora = dental[i];
+	if (hora.hora > ultimaHora.hora)    	
+		ultimaHora = dental[i];		
+	document.write('<tr><td>' + hora.hora + '</td><td>' + hora.especialista + '</td><td>' + hora.paciente + '</td><td>' + hora.rut + '</td><td>' + hora.prevision + '</td></tr>');
+    }
+    document.write('<p>Primera atención: ' + primeraHora.paciente + ' - ' + primeraHora.prevision + ' | Última atención: ' + ultimaHora.paciente + ' - ' + ultimaHora.prevision + '</p>');
+    document.write('</table>');
+   </script>
+</body>
+</html>
