@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Desafío SuperHéroe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodolfo"/>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
+    <link href="https://superheroapi.com/api/10226299794298182">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body> 
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/sh2.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
+    SUPERHÉROE
+  </a>
+</nav>
+<header id="central">
+    <div>
+        <div id="imagen" class="imagen">
+            <img src="assets/img/sh1.jpg" width="45%"  class="rounded mx-auto d-block"  alt="superhero"><br>
+        </div>  
+        <div id="formulario" class="formulario">
+            <p id="titulos" class="formulario__titulos"><b> Encuentra a tu <span class="titulos">SuperHéroe</b></span></p>
+            <p> Ingresa el número del SuperHéroe (desde 1 hasta 731)</p>        
+            <input id="num__super" required type="text" value="0"><br><br>
+            <input id="boton__enviar" type="submit" class="boton" value="Buscar">  
+            <p> </p>
+        </div>
+    </div>    
+</header>        
+<hero id="resultado" class="resultado">
+    <div class="resultado__imagen">
+        <div class="card">
+            <img id="card__imagen" class="card-img-top"  width ="30" height="350" src="assets/img/sh2.jpg" alt="hero__pict">
+        </div> 
+    </div>       
+    <side class="card__body">
+        <h5 id="card__name"  class="card__title"></h5>  
+        <p id="card__conexion" class="card__text">Conexión:</p><hr>
+        <p id="card__alianza" class="card__text">Alianzas:</p><hr>
+        <p id="card__ocupacion" class="card__text">Ocupación:</p><hr>
+        <p id="card__aparicion" class="card__text">Aparición:</p><hr>
+        <p id="card__altura" class="card__text">Altura:</p><hr>
+        <p id="card__peso" class="card__text">Peso:</p>
+    </side>
+    <aside class="aside">  
+        <div id="chartContainer">
+        </div>
+    </aside>
+</hero>        
+<footer></footer> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.canvasjs.min.js"></script>     
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>
