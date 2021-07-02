@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    background-color: #900C3F;
+    color:#FFFFFF;
+}
+
+#form_a_editar {
+    display: none;
+}
+
+#form_a_editar p {
+    color: rgb(169, 32, 32);
+    font-weight: 700;
+}
+h6 {
+    text-align: center;
+}
+#buscar, #listar, #ingresar, #editar {
+    background-color: #900C3F;
+    color: #FFFFFF;
+}
+tr {
+    text-align: center;
+    background-color: #900C3F;
+}
+h1, h2 {
+    text-align: center;
+}
