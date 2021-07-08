@@ -6,7 +6,7 @@ export default class Aguila extends Animal {
         super(nombre, edad, img, comentarios, sonido);
 
         this.setImg('./assets/imgs/Aguila.png');
-        this.setSonido('./assets/sounds/Siseo.mp3');
+        this.setSonido('./assets/sounds/Chillido.mp3');
     }
 
 }
