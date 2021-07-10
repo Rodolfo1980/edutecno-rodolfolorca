@@ -1,23 +1,35 @@
-$white: #FFFFFF;
-$platinum: #E6E7E7;
-$light-gray: #D1D1D1;
-$dark-gray: #6C6E70;
+// Color Scheme
+
+// First Color Scheme
+$white: #FFF;
+$platinum: #E8E8E8;
+$light-gray: #D1D1D1; 
+
+// Second Color Scheme
 $fuzzy-wuzzy: #E56353;
-$ruddy-pink: #D76C69; 
-$spanish-pink: #ECBCBA;
+$rudy-pink: #D76C69;
+$spanish-pink: #F7BFB6;
+
+//Third Color Scheme
 $eerie-black: #121619;
 $raisin-black: #222323;
-$nickel: #6C6E70;
-$primary-scheme: #ECBCBA;
-$secondary-scheme: #E6E7E7;
-$display: 'Playfair Display', serif;
-$sans-serif: 'Roboto', sans-serif;
-$font-regular: 400;
-$font-light: 300;
-$font-italic: italic;
+$nickel: #6c6e70;
+
+// Tipography
+
+//Font Family
+$playfair: 'Playfair Display', serif;
+$roboto: 'Roboto', sans-serif;
+
+// Font Weight
+$light: 300;
+$regular: 400;
+$black-italic: 900;
+
+// Font Sizes
 $xx-large: 70px;
 $x-large: 30px;
 $large: 18px;
 $medium: 16px;
-$small: 12px;
-$btn-transition: 0.3s;
+$small: 14px;
+$x-small: 12px;

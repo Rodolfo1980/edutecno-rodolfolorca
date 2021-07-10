@@ -1,14 +1,35 @@
+/* Base Typography*/
+
 h1 {
-    font-family: $display;
+    font-family: $playfair;
+    font-weight: $black-italic;
     font-size: $xx-large;
-    color: $white;
-    float: left;
+    font-style: italic;
 }
-a, p {
-    font-family: $font-italic;
-    font-size: $medium;
-}
+
 h3 {
-    font-family: $display;
+    font-family: $playfair;
+    font-weight: $regular;
     font-size: $x-large;
+    font-style: italic;
+}
+
+h4 {
+    font-family: $roboto;
+    font-weight: $light;
+    font-size: $large;
+}
+
+h5 {
+    font-family: $playfair;
+    font-weight: $regular;
+    font-size: $medium;
+    color:$nickel;
+}
+
+p {
+    font-family: $roboto;
+    font-weight: $light;
+    font-size: $medium;
+    color: $nickel;
 }

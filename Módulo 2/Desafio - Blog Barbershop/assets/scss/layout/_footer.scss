@@ -1,18 +1,11 @@
-footer {
-    background-color: $eerie-black;
-    height: 6.25rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-  .footer_logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 7.625rem;
+//Footer Layout
+.footer {
+    
+  background-color: $eerie-black; 
+  text-align: center;
+  height: 12.5rem;     
+  }
+
+.logo__footer {
+  margin-top: 4.375rem;
 }

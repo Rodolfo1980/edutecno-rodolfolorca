@@ -1,0 +1,47 @@
+// Pagination
+
+.pag__pagination {
+    background-color: $platinum; 
+    height: 9rem;
+    
+}
+
+.nav__pagination ul, li {
+    padding-top: 4%;
+    color: $eerie-black;
+}
+
+.page-link {
+    color: $eerie-black;
+}
+
+.page-link:hover {
+    background-color: $nickel; 
+    color: $white;
+}
+
+.pag__pagination .page-item:first-child a.page-link {
+
+    margin-left: 0;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+
+}
+
+.pag__pagination .page-item:last-child a.page-link {
+
+    margin-left: 0;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+
+@include media-breakpoint-only(xs) {
+    .nav__pagination ul, .nav__pagination li {
+        padding-top: 40px;
+    }
+
+    .m__pagination {
+        padding-top: 40px;
+    }
+}
