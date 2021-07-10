@@ -32,7 +32,6 @@ export default class Animal {
         this.setEdad(edad);
     }
 
-
     get comentarios() {
         return this.getComentarios();
     }

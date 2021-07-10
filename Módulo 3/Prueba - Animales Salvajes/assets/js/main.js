@@ -4,18 +4,14 @@ import Oso from './oso.js';
 import Serpiente from './serpiente.js';
 import Aguila from './aguila.js';
 
-
-// Registrar Animal
+// Registro del animal
 let animalesEnInvestigacion = [];
-
 let divAnimales = document.getElementById('Animales');
 let div = document.createElement('div');
 divAnimales.appendChild(div);
 div.setAttribute('class', 'row row-cols-1 row-cols-md-4');
 div.setAttribute('id', 'mural')
-
 let animal = document.getElementById('animal');
-
 animal.addEventListener('change', (event) => {
     try {
         let preview = document.getElementById('preview')
@@ -43,16 +39,15 @@ animal.addEventListener('change', (event) => {
             break;
         default:
             break;
-    }4
+    }
 });
 
 let edad = document.getElementById('edad');
 let comentarios = document.getElementById('comentarios');
-
 let btnRegistrar = document.getElementById('btnRegistrar');
 btnRegistrar.addEventListener('click', () => {
     if ((animal.value == 'Seleccione un animal') || (edad.value == 'Seleccione un rango de años')) {
-        return alert('Debe seleccionar un animal y un rango de edad')
+        return alert('Debe seleccionar un animal y un rango de años de edad')
     }
     else {
         let ingreso;
@@ -76,14 +71,14 @@ btnRegistrar.addEventListener('click', () => {
             default:
                 break;
         }
-        animalesEnInvestigacion.push(ingreso)
-        console.log(animalesEnInvestigacion)
+        animalesEnInvestigacion.push(ingreso);
+        console.log(animalesEnInvestigacion);
         panel.tarjetas(ingreso);
 
-        // limpieza de datos
+        // limpieza de datos y mensaje de error si no se ingresa el animal y la edad estimada
         try {
-            animal.value = '';
-            edad.value = '';
+            animal.value = 'Seleccione un animal';
+            edad.value = 'Seleccione un rango de años';
             comentarios.value = '';
             let preview = document.getElementById('preview')
             while (preview.hasChildNodes()) {
@@ -94,7 +89,6 @@ btnRegistrar.addEventListener('click', () => {
         }
     }
 })
-
 
 // Función IIFE
 let llamada = (() => {
@@ -159,5 +153,4 @@ let panel = (() => {
             tarjetas: (animalesEnInvestigacion) => crearCards(animalesEnInvestigacion)
         }
     }                                                                                           
-
 )();
