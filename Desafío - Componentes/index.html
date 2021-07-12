@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <meta name="author" content="Rodolfo Lorca">
+    <title>Desafío - Componentes</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        .fondo {
+            background-image: url('https://rickandmortypod.com/wp-content/uploads/2018/11/cropped-RM_page-header_background1-3.png');
+            background-size: cover;
+        }
+        .imagen {
+            border-radius: 50%;
+            width: 120px;
+        }
+        span {
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 55px;
+            position: relative;
+            bottom: 50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <componente-padre></componente-padre> 
+    </div>
+    <script>
+        const ComponenteHijo = {
+            data (){
+                return {
+                    count: 0
+                }
+            },
+            props:{
+                datos: {
+                    type: Array,
+                    required: true
+                }
+            },
+            template : `
+            <div class="fondo">
+                    <div v-for="(item, index) in datos" :key="index">
+                        <img class="imagen" :src="item.img" alt="item.name">
+                        <span v-text="item.name"></span>
+                    </div>
+            </div>
+            `,
+        }
+        Vue.component('componente-padre', {
+            data() {
+                return {
+                    datos : [
+                        {name: 'Rick Sanchez', img: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'},
+                        {name: 'Morty Smith', img: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'},
+                        {name: 'Summer Smith', img: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'},
+                        {name: 'Beth Smith', img: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg'},
+                        {name: 'Jerry Smith', img: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg'},
+                    ],
+                }
+            },
+            components:{
+                'componente-hijo' : ComponenteHijo, 
+            },           
+            template : `<div>
+                            <componente-hijo :datos="datos"/>
+                        </div>`
+        })
+        const app = new Vue({
+            el: '#demo',            
+        })
+    </script>   
+</body>
+</html>
