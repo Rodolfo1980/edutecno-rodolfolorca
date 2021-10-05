@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Login</h1>
+    <h1><b>Login</b></h1>
     <img alt="Sin acceso" src="../assets/candado_cerrado.png" />
-    <h3>Desafío Creación de autentificación con Vue Router</h3>
+    <h2>Creación de autentificación con Vue Router</h2>
     <div class="card w-25 mx-auto mt-5 shadow-sm">
       <div class="card-body">
         <form @submit.prevent="login">

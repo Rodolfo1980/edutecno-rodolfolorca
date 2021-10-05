@@ -1,8 +1,8 @@
 <template>
   <div class="text-center mt-5">
-    <h1>Home</h1>
-    <img alt="Sin acceso" src="../assets/candado_abierto.png" />
-    <h3>Desafío Creación de autentificación con Vue Router</h3>
+    <h1><b>Home</b></h1>
+    <img alt="Con acceso" src="../assets/candado_abierto.png" />
+    <h2>Creación de autentificación con Vue Router</h2>
     <div class="d-flex flex-column">
       <a href="" style="font-size: 40px" @click.prevent="logout"
         ><b>SALIR</b></a
